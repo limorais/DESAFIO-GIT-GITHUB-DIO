@@ -1,0 +1,16 @@
+========== JAVA ==========
+
+Linguagem orientada a objetos desenvolvida na década de 90 (Sun Microsystems)
+e posteriormente adquirida pela Oracle em 2008.
+
+Uma das linguagens mais utilizadas no mercado.
+
+Linguagem interpretada/traduzida: instruções são passadas para linguagem de máquina. Compilada para bytecode e interpretado pela máquina virtual JVM.
+
+Plataforma x Linguagem
+O Java não é a única linguagem de programação da Plataforma, mas não é a única.
+Groove, JayRuby, Jython, etc...
+"Escreva uma vez e execute em qualquer lugar."
+Java SE (Java Plataform, Standad Edition) -- base da plataforma e tras algumas classes comuns entre as plataformas
+Java EE (Java Plataform, Enterprise Edition) -- desenvolvimento Web
+Java ME (Java Plataform, Micro Edition) -- desenvolvimento de dispositivos móveis e embarcados
