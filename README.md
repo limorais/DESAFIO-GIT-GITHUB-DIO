@@ -1,2 +1,4 @@
 # DESAFIO-GIT-GITHUB-DIO
-Primeiro desafio DIO do Santander Code Girls
+Desafio DIO do Santander Code Girls
+Primeiro repositório
+
