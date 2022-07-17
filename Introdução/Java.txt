@@ -39,3 +39,11 @@ Instalando java 11 (LTS)
 Configurando variável de ambiente JAVA_HOME e Path
 Lembrando uma coisinha: git config --list
 manter o email e username igual ao do GitHub
+
+
+- ECLIPSE
+Mudando perspectiva: Ctrl+3
+Projeto java > pasta src > Ctrl+n
+Ctrl+espaco (auto preenchimento)
+Run > Run As > Java Application
+
