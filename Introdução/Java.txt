@@ -40,8 +40,7 @@ Configurando variável de ambiente JAVA_HOME e Path
 Lembrando uma coisinha: git config --list
 manter o email e username igual ao do GitHub
 
-
-- ECLIPSE
+========== ECIPLSE ==========
 Mudando perspectiva: Ctrl+3
 Projeto java > pasta src > Ctrl+n
 Ctrl+espaco (auto preenchimento)
@@ -61,6 +60,8 @@ Ctrl + Alt + seta para baixo (copia o método)
 
 Commit direto do Eclipse
 Botão direito sobre o projeto > Teams > Share project (será solicitado credenciais e URL do repositório)
+
+========== INTELLIJ ==========
 
 
 
