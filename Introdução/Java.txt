@@ -51,4 +51,16 @@ Atalhos
 Window > Preferences > General > Apearence
 Tamanho da fonte Ctrl+ (Ctrl- para diminuir)
 Ctrl+m (visualizao da tela - expandir)
+Comentário /*   */
+Ctrl+d (apagar linha)
+Ctrl+3 (insere blocos de comandos de acordo com o que foi selecionado)
+Alt+seta (altera o bloco de posição)
+Ctrl + Shift + f (reorganiza os recuos de identação)
+Ctrl + Shift + o (importação de modelo)
+Ctrl + Alt + seta para baixo (copia o método)
+
+Commit direto do Eclipse
+Botão direito sobre o projeto > Teams > Share project (será solicitado credenciais e URL do repositório)
+
+
 
