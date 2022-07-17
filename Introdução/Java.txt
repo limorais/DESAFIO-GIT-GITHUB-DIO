@@ -47,3 +47,8 @@ Projeto java > pasta src > Ctrl+n
 Ctrl+espaco (auto preenchimento)
 Run > Run As > Java Application
 
+Atalhos
+Window > Preferences > General > Apearence
+Tamanho da fonte Ctrl+ (Ctrl- para diminuir)
+Ctrl+m (visualizao da tela - expandir)
+
