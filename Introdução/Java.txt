@@ -57,11 +57,21 @@ Alt+seta (altera o bloco de posição)
 Ctrl + Shift + f (reorganiza os recuos de identação)
 Ctrl + Shift + o (importação de modelo)
 Ctrl + Alt + seta para baixo (copia o método)
+Ctrl + Shift + c (comenta seleção)
 
 Commit direto do Eclipse
 Botão direito sobre o projeto > Teams > Share project (será solicitado credenciais e URL do repositório)
 
 ========== INTELLIJ ==========
 
+Alt+insert (em cima da pasta src) > Package
+Alt+insert (em cima da pasta br.com.dio> incluir classe (java) main
+Ctrl + Shift + f10 (configuração)
+Ctrl + Shift + / (comenta seleção)
+Ctrl + / (comenta linha por linha da seleção)
+Ctrl+Alt+o (apaga imports que não estamos utilizando)
+Alt+enter (importa)
+Ctrl+y (deleta linha)
+Shift+f10 (roda programa)
 
 
