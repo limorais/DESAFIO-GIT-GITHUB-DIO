@@ -58,6 +58,8 @@ Ctrl + Shift + f (reorganiza os recuos de identação)
 Ctrl + Shift + o (importação de modelo)
 Ctrl + Alt + seta para baixo (copia o método)
 Ctrl + Shift + c (comenta seleção)
+F6 (step over)
+F5 (step into)
 
 Commit direto do Eclipse
 Botão direito sobre o projeto > Teams > Share project (será solicitado credenciais e URL do repositório)
@@ -73,5 +75,15 @@ Ctrl+Alt+o (apaga imports que não estamos utilizando)
 Alt+enter (importa)
 Ctrl+y (deleta linha)
 Shift+f10 (roda programa)
+Ctrl + Alt + l (reorganiza os recuos de identação)
+Ctrl + Alt + v (declara variavel)
+F8 (step over)
+F7 (step into)
+
+link útil: www.basef.com.br/index.php/Atalhos_do_IntelliJ_Idea
+	   https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf
+
+
+Plugin Key Promoter X
 
 
