@@ -1,0 +1,27 @@
+===============
+
+Variáveis: espaço na memória do computador, onde se pode guardar valores.
+
+Exitem 4 tipos:
+- Instância (objeto)
+- Classe (classe)
+- Local (dentro de métodos)
+- Parâmetro (na assinatura do método)
+
+Criando uma variável:
+<?visibilidade?><?modificador?>tipo nome <?=valor inicial?>
+
+? - opcional
+V: public, protected e private
+M: static e final (constante)
+T: tipo de dado
+N: nome que é fornecido a variável
+VI: um valor inicial, caso deseje
+
+obs: são case sensitives
+
+=================================================================
+Palavras reservadas: 
+abstract, continue, for, new, switch, assert, default, goto, package, synchronizedboolena, do, if, private, this, break, double, case, Implements, throw, protected, byte, else, import, public, throws, enum, instanceof, return, transient, catch, extends, int, short, try, char, final, interface, static, void, class, finally, long, strictfp, volatile, const, float, native, super, while
+=================================================================
+
