@@ -1,0 +1,34 @@
+======= MÉTODO =======
+
+Método: porção de código (sub-rotina) que é disponibilizada por uma classe. Este é executado quando é feita uma requisição a ele. São responsáveis por definir e realizar um determinado comportamento.
+Faz de fato o software funcionar, executa funções, tudo o que executamos está dentro dos métodos.
+
+Criação de um método
+<?visibilidade?><?tipo?><?modificador?> retorno nome (<?parâmetros?>)<?exceções?>corpo
+
+V: public, protected, private
+T: concreto ou abstrato
+M: static ou final
+R: tipo de dado ou "void"
+N: nome que é fornecido ao método
+P: parâmetros que pode receber
+E: exceções que pode lançar
+C: código que possui ou vazio
+
+Math.random(); ou Math.sqrt(4);
+usuario.getEmail(); ou usuario.alterarEndereco(endereco novo)
+
+
+Assinatura: nome do método + parâmetros
+Sobrecarga: mesmo nome do método + lista diferente de parâmetros
+Return: interrupção ou retornar alguma informação (seu tipo tem que ser o mesmo do método)
+
+links úteis:
+https://github.com/tlcdio/MAula01
+https://github.com/tlcdio/MAula02
+https://www.casadocodigo.com.br/products/livro-oo-conceitos
+https://docs.oracle.com/javase/tutorial/java/javaOO/methods.html
+https://github.com/tlcdio/MAula03
+https://docs.google.com/presentation/d/1InCKAqx_Vocw9BxN95JTtcDpPnredEOa/edit#slide=id.p2
+
+
