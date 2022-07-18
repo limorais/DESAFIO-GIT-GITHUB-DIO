@@ -1,0 +1,89 @@
+========== JAVA ==========
+
+Linguagem orientada a objetos desenvolvida na década de 90 (Sun Microsystems)
+e posteriormente adquirida pela Oracle em 2008.
+
+Uma das linguagens mais utilizadas no mercado.
+
+Linguagem interpretada/traduzida: instruções são passadas para linguagem de máquina. Compilada para bytecode e interpretado pela máquina virtual JVM (java virtual machine).
+
+Plataforma x Linguagem
+O Java não é a única linguagem de programação da Plataforma, mas não é a única.
+Groove, JayRuby, Jython, etc...
+"Escreva uma vez e execute em qualquer lugar."
+Java SE (Java Plataform, Standad Edition) -- base da plataforma e tras algumas classes comuns entre as plataformas
+Java EE (Java Plataform, Enterprise Edition) -- desenvolvimento Web
+Java ME (Java Plataform, Micro Edition) -- desenvolvimento de dispositivos móveis e embarcados
+
+JDK x JRE
+Java Development Kit: kit de desenvolvimento java responsável por compilar o código-fonte (.java) em bytecode (.class).
+Java Virtual Machine: responsável por executar o bytecode.
+Java Runtime Environmnent: ambiente de execução do java que fornece as bibliotecas
+padrão do Java para o JDK compilar o código e para a JVM executar o programa.
+
+Versões Java
+Paga - JDK Oracle (requer uma licença comercial sob o Contrato de Licença de Código Binário Oracle). Os lançamentos das versões OpenJDK LTS (suporte de longo prazo) acontecem pelo menos 1 vez/4anos.
+Gratuita - OpenJDK (open source com uma GNU General Public License)
+Versão 8*
+
+IDE
+Ambiente de desenvolvimento integrado, software que combina ferramentas comuns de desenvolvimento em uma única interface gráfica do usuário (GUI), facilitando o desenvolvimento de aplicações.
+JDK - conjunto de ferramentas para desenvolver programas
+A JDK faz parte das IDEs (InteliJ, Eclipse, NetBeans, JCreator, BlueJ, Vscode etc)
+- Eclipse: desenvolvimento Java, suporta várias linguagens de programação
+- IntelliJ IDEA: desenvolvimento de software de PC, ambiente de desen. integrado escrito em Java. Possui 2 versões: free (comunity) e paga (ultimate)
+
+Link útil: https://github.com/cami-la/curso-dio-dominando-ides-java
+
+Instalando java 11 (LTS)
+Configurando variável de ambiente JAVA_HOME e Path
+Lembrando uma coisinha: git config --list
+manter o email e username igual ao do GitHub
+
+========== ECIPLSE ==========
+Mudando perspectiva: Ctrl+3
+Projeto java > pasta src > Ctrl+n
+Ctrl+espaco (auto preenchimento)
+Run > Run As > Java Application
+
+Atalhos
+Window > Preferences > General > Apearence
+Tamanho da fonte Ctrl+ (Ctrl- para diminuir)
+Ctrl+m (visualizao da tela - expandir)
+Comentário /*   */
+Ctrl+d (apagar linha)
+Ctrl+3 (insere blocos de comandos de acordo com o que foi selecionado)
+Alt+seta (altera o bloco de posição)
+Ctrl + Shift + f (reorganiza os recuos de identação)
+Ctrl + Shift + o (importação de modelo)
+Ctrl + Alt + seta para baixo (copia o método)
+Ctrl + Shift + c (comenta seleção)
+F6 (step over)
+F5 (step into)
+
+Commit direto do Eclipse
+Botão direito sobre o projeto > Teams > Share project (será solicitado credenciais e URL do repositório)
+
+========== INTELLIJ ==========
+
+Alt+insert (em cima da pasta src) > Package
+Alt+insert (em cima da pasta br.com.dio> incluir classe (java) main
+Ctrl + Shift + f10 (configuração)
+Ctrl + Shift + / (comenta seleção)
+Ctrl + / (comenta linha por linha da seleção)
+Ctrl+Alt+o (apaga imports que não estamos utilizando)
+Alt+enter (importa)
+Ctrl+y (deleta linha)
+Shift+f10 (roda programa)
+Ctrl + Alt + l (reorganiza os recuos de identação)
+Ctrl + Alt + v (declara variavel)
+F8 (step over)
+F7 (step into)
+
+link útil: www.basef.com.br/index.php/Atalhos_do_IntelliJ_Idea
+	   https://resources.jetbrains.com/storage/products/intellij-idea/docs/IntelliJIDEA_ReferenceCard.pdf
+
+
+Plugin Key Promoter X
+
+

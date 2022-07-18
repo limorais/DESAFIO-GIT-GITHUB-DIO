@@ -1,0 +1,98 @@
+SHA1: 
+	Na área da criptografia, SHA-1 (Secure Hash Algorithm) é uma função de dispersão criptográfica
+	(ou função hash criptográfica) projetada pela Agência de Segurança Nacional
+	dos Estados Unidos (NSA) e é um Padrão Federal de Processamento de Informação dos
+	Estados Unidos publicado pelo Instituto Nacional de Padrões e Tecnologia (NIST).
+
+	A encriptação gera um conjunto de caracteres identificadores de 40 dígitos.
+	Esse conjunto é único. O Git utiliza esse método para identificar os arquivos
+	de uma forma rápida e segura.
+
+	1 echo "ola mundo" | openssl sha1
+	2 > (stdin) = [chave gerada]
+
+	openssl sha1 nomedoarquivo.txt
+	SHA1 (nomedoarquivo.txt) = [chave gerada]
+
+OBJETOS FUNDAMENTAIS DO GIT
+BLOBS:
+	1 echo 'conteudo' | git hash-object --stdin
+	2 > [chave gerada 1]
+	3
+	4 echo -e 'conteudo' | openssl sha1
+	5 > [chave gerada 2]
+	
+	A função/flag stdin espera receber um arquivo
+	Os arquivos são armazenados em Blobs (bolhas) que contém metadados
+	Tipo (Blob) / Tamanho do arquivo / \0 / conteudo
+
+	1 echo 'conteudo' | git hash-object --stdin
+	2 > [chave gerada 1]
+	3
+	4 echo -e 'blob 9\0conteudo' | openssl sha1
+	5 > [chave gerada 1]
+
+	O Git gera um sha1 para cada arquivo que é armazenado
+	no objeto blob, sendo que também é caracterizado por metadados.
+	
+TREES:
+	As trees (árvores) armazenam blobs
+	Também contém metadados
+	Tipo (Tree)/ Tamanho / \0 / blob / sha1 / nome do arquivo
+	Se observarmos o blob guarda somente o sha1 do arquivo, já a tree guarda o nome dele
+	A árvore é responsável por montar toda a estrutura onde se encontram os arquivos
+	Apontam tanto para blobs ou para outras trees (um diretório dentro de outro)
+	As árvores também tem seu próprio sha1 (metadados das árvores)
+	Se mudamos uma vígula em um arquivo, alteramos o sha1 do blob e também alteramos o sha1 da árvore
+	Link útil: https://git-scm.com/
+	
+COMMITS:
+	Objeto que junta todas as informações/metadados
+	Tipo (Commit) / Tamanho / Tree / sha1 tree / Parente / sha1 parente / Autor / nome autor / mensagem / timestamp
+	O sha1 do commit é o hash de todo esse conjunto de informações
+	
+SISTEMA DISTRIBUÍDO E SEGURO
+	O versionamento do repositório/código é garantido pela encriptação hash
+	Todas as versões do código são confiáveis e possuem rastreabilidade
+
+CHAVES SSH E TOKENS
+	Autenticação nome/senha --> lentos e obsoletos
+	Chave SSH: forma de estabelecer uma conexão segura e encriptada entre 2 máquinas
+	Chave pública e chave privada --> assinatura da máquina
+	Criando chaves SSH: ssh-keygen -t ed25519 -C meu@e-mail
+	Uma pasta é criada com as 2 chaves, dento dessa pasta podemos visualizar seu conteúdo: cat id_ed25519.pub
+	*pwd --> mostra o caminho completo da pasta
+	Com isso temos a chave pública e podemos copiar e colar no GitHub
+	Inicializar o SSH agent: 
+	1 eval $(ssh-agent -s)
+	2 Agent pid 313 ---- resultado
+	3 ssh-add id_ed25519
+	4 Enter passphrase for id_ed25519: ---- resultado
+	5 Identity added: id_ed25519 (meu@e-mail) ---- resultado
+	
+	Clonando um repositório usando SSH
+	1 git clone [caminho SSH copiado do GitHub]
+	
+	Token de Acesso Pessoal
+	Gerar um token no GitHub  (Developers Settings>Personal Access Tokens> New > Selecionar opção repo > Generate Token) e salvar em local seguro
+	Ao fazer um commit o Git vai solicitar usuário senha (token)
+	
+
+COMANDOS GIT
+	git init
+	git add *
+	git commit -m "comentário"
+	git status
+	git config --list
+	git config --global --unset user.email (limpa a informação)
+	git remote add origin (copiar link do repositório do GitHub)
+	git remote -v (lista de repositórios cadastrados)
+	git push origin master (empurrar o repositório local para o GitHub)
+	
+CONFLITOS
+	Repositório remoto não possui as informações que seu servidor local possui
+	git pull origin master
+	Abrir arquivo com conflitos e fazer as alterações manualmente
+	
+	
+	

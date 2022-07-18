@@ -1,0 +1,79 @@
+===============
+
+Variáveis: espaço na memória do computador, onde se pode guardar valores.
+
+Exitem 4 tipos:
+- Instância (objeto)
+- Classe (classe)
+- Local (dentro de métodos)
+- Parâmetro (na assinatura do método)
+
+Criando uma variável:
+<?visibilidade?><?modificador?>tipo nome <?=valor inicial?>
+
+? - opcional
+V: public, protected e private
+M: static e final (constante)
+T: tipo de dado
+N: nome que é fornecido a variável
+VI: um valor inicial, caso deseje
+
+obs: são case sensitives
+
+=================================================================
+Palavras reservadas: 
+abstract, continue, for, new, switch, assert, default, goto, package, synchronizedboolena, do, if, private, this, break, double, case, Implements, throw, protected, byte, else, import, public, throws, enum, instanceof, return, transient, catch, extends, int, short, try, char, final, interface, static, void, class, finally, long, strictfp, volatile, const, float, native, super, while
+=================================================================
+
+Dados: valores e consequentemente operações que as variáveis podem assumir e sofrer, respectivamente.
+
+Tipificação
+- Esática (forte) vs Dinâmica (fraco) -- definição do  tipo de variável
+- Primitivo (homogêneo) vs Composto (heterogêneo) -- (valores numéricos, texto, etc) (ojetos, structs)
+
+Opções de tipos
+- Textual
+	char (caracteres de 16-bit unicode --> char c = '\u0084'; ou char c= 'T';
+	****string (um tipo especial) --> String s = "T";**** composto
+- Numeral (inteiro ou real)
+	byte (-128 até 127) --> byte b =15;
+	short (-32.768 até 32.767) --> short s = -15785;
+	int (-2.147.483.648 até 2.147.483.647) --> int i = 8515785;
+	long (-9.223.372.036.854.775.808 até 9.223.372.036.854.775.807) --> long l = 5938515785L;
+	float (+- 3.402.823.47E38) --> float f = 3.14...(f);
+	double (+- 1.79769313486231570e308) --> double d = 3.14...(d);
+- Lógico (true/false)
+- Objeto
+
+Operadores: símbolos especiais quais são capazes de realizar ações específicas em um, dois ou mais operandos e, em seguida, retornar um resultado.
+
+Tipos
+- pósfixado: exp++ ou exp-- (realiza a operação de forma tardia, atua apenas em 1 operando)
+	int j = k--; --> j=k; k=k-1;
+- préfixado: ++exp ou --exp (realiza a operação antes de realizar a ação no operando)
+	int i = ++k; --> i = k+1;
+- aritmético: +, -, *, /, % (mod, resto da divisão)
+- atribuição: =, +=, -=, *=, /=, %=
+	i+=5; --> i=i+5;
+	j-=3; --> j=j-3;
+	l*=3; --> l=l*3;
+	k%=2; --: k=k%2;
+
+Precedências
+pósfixado (++,--)
+préfixado(++,--)
+multiplicativo (*,/,%)
+aditivo (+,-)
+atribuição (=,+=,-=,*=,/=,%=)
+
+Casting/Conversões: transformação de uma determinada variável de tipo menos específico para um tipo mais específico (promoção) ou vise-versa (rebaixamento).
+
+Tipos
+- Upcast (implícito): sobra espaço
+- Downcast (explícito): pode-se perder espaço, por isso deve-se declarar o casting de forma explícita
+*Ambos podem ser realizados para tipos de dados primitivos e compostos
+
+Links Úteis:
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html
+
