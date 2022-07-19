@@ -1,0 +1,79 @@
+===== Operadores Relacionais ======
+
+São símbolos especiais quais são capazes de realizar comparações (no mínimo 2) entre determinados operando e, em seguida, retornar um resultado.
+
+Tipo
+- Similaridade (igual, diferente)
+	Igualdade ==
+	Diferença !=
+- Tamanho (maior, maior igual, menor, menor igual)
+	Maior >
+	Maior Igual >=
+	Menor <
+	Menor Igual <=
+
+===== Operadores Lógicos ======
+
+São símbolos especiais quais são capazes de realizar comparações lógicas entre operandos lógicos (e não números, a não ser que estejam dentro de expressões()) ou expressões e, em seguida, retornar um resultado.
+
+- Conjunção
+	Operação lógica que só é verdadeira quando ambos os operandos ou expressões envolvidas são verdade
+	Simbologia &&
+	Terminologia and (e)
+- Disjunção
+	Operação lógicaque só é falsa quando ambos os operandos ou expressões envolvidas são falsos
+	Simbologia ||
+	Terminologia or (ou)
+- Disjunção exclusiva
+	Operação lógica que só é verdade quando ambos os operandos ou expressões são opostos
+	Simbologia ^
+	Terminologia xor
+- Negação
+	Operação lógica que inverte o valor lógico de um operando ou expressão
+	Simbologia !
+	Terminologia inversão
+
+Utilização: dentro de estruturas de controle de fluxo
+
+Operador bitwise: & e |
+Operadores shift: ~ (inverter bits),>> (zeros a diretita),>>>,<<(zeros a esquerda)
+
+
+Boas práticas: cirar variáveis auxiliares para guardar resultados intermediários
+
+===== Controles de Fluxo ======
+
+São estruturas que tem a capacidade de direcionar o fluxo de execução do código
+
+- Decisão
+	if (não suporta expressões aritméticas)
+	switch
+	operador ternário
+- Repetição
+	for
+	while
+	do while
+- Interrupção
+	break
+	continue
+	return
+
+Boas práticas:
+- Switch é para valores exatos e if para expressões booleanas
+- Evitar usar o default do switch para "casos genéricos"
+- Evitar o efeito "flexa" dos if's
+- Usar a boa prática de criar variáveis auxiliares para diminuir o tamanho do if
+
+===== Blocos ======
+{
+...
+}
+
+É um grupo de 0 ou mais códigos quais trabalham em conjunto para executar uma operação
+
+Tipos
+- Local: dentro de métodos
+- Estáticos: dentro de classes
+- Instância: dentro de classes
+
+Obs: quando há apenas uma linha de execução no bloco if, não é necessário inserir {}.
