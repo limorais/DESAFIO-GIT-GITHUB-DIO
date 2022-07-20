@@ -1,0 +1,17 @@
+Collection é um objeto que agrupa múltiplos elementos (variáveis primitivas ou objetos) dentro de uma única unidade. Serve para armazenar r processar conjuntos de dados de forma eficiente.
+
+Composição
+- Interfaces: contrato que quando assumido por uma classe, deve ser implementado.
+- Implementações ou Classes: materializações, codoficação das interfaces.
+- Algoritmos: sequência lógica, finita e definida de instruções que devem ser seguidas para resolver um problema.
+
+link útil: <https://drive.google.com/file/d/1kaAIEkaTt3q1rof6OFOb5XVgf25IDXf7/view>
+
+INTERFACE LIST
+
+java.util.List
+- Elementos duplicados e garante ordem de inserção
+Vector (trad)
+ArrayList (mais operações de pesquisa são necessários)
+LinkedList (mais ooperações de inserção e exlusão são necessárias)
+
