@@ -1,0 +1,26 @@
+Orientação a Objetos - Professor (Thiago Leite)
+
+Por que usar?
+- Paradigma estruturado: tem uma representação mais simplista (C++). Mecanismos e conceitos mais limitados para trabalhar. Foca em funções e dados.Foca no como fazer.
+
+- Paradigma Orientado a Objeto tem uma representação mais realista. Apresenta de forma mais realista os conceitos do mundo real. Foca na modelagem e na interação entre dados (nível de abstração maior). Foca no que fazer (o que é o problema que queremos resolver).
+Vantagens:
+Melhor coesão
+Melhor acoplamento (flexíveis)
+Diminuição de gap semântico (diferença de representação, relação mais clara e objetiva)
+Coletor de lixo (limpam a memória do computador - menos propício a erro e travamento de software)
+
+funções e procedimentos <-- programação estruturada --> dados
+
+objeto->objeto->programação orientada a objetos -> objeto-> objeto
+
+===== Fundamentos ======
+
+A orientação a objetos é um paradigma de análise, projeto e programação de sistemas de software baseado na composição e interação entre diversas unidades de software chamadas de objetos.
+
+- Abstração: processo pelo qual se isolam características de um objeto (essenciais e não acidentais), considerando os que tenham em comum certos grupos de objetos.
+
+- Reuso: capacidade de criar novas unidades de código a partir de outras já existentes (vários mecanismos e em mais alto nível).
+
+- Encapsulamento: capacidade de esconder complexidades e proteger dados.
+
