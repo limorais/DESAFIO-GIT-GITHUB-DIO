@@ -152,5 +152,36 @@ Python: não é possível realizar esta operação
 
 Por que usar sobrecarga? Representar de forma mais fidedigna a ação real (manter a abstração alvo e facilitar o entendimento do software).
 
-Objeto
-Mensagem
+==========
+Objeto: representação de um conceito/entidade do mundo real, que pode ser física ou conceitual e possui um significado bem definido para um determinado software. Para esse conceito/entidade, deve ser definida inicialmente uma classe (molde, estático) a partir da qual posteriormente setão instanciados objetos distintos. Realmente executa e "faz as coisas acontecerem".
+
+Criação
+Java e C#
+Carro carro = new Carro ();
+
+Python
+carro = Carro ()
+
+
+==========
+Mensagem: processo de ativação de um método de um objeto. Isto ocorre quando uma requisição (chamada) a esse método é realizada, assim disparando a execução de seu comportamento descrito por sua classe. Pode também ser direcionada diretamente à classe, caso a requisição seja a um método estático.
+
+Criação
+Java e C#
+Carro carro = new Carro ();
+carro.<método>;
+
+Carro.<método>;
+
+Python
+carro = Carro ()
+carro.<método>
+
+Carro.<método>
+
+Conceitos avançados
+-instânciaxestático: atributos e métodos
+-estado de um objeto
+-identidade de um objeto
+-representação numérica de um objeto
+-representação padrão de um objeto
