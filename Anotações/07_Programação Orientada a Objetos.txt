@@ -24,3 +24,133 @@ A orientação a objetos é um paradigma de análise, projeto e programação de
 
 - Encapsulamento: capacidade de esconder complexidades e proteger dados.
 
+====== ESTRUTURA ======
+- Classe: é uma estrutura que abstrai um conjunto de objetos com características similares. Uma classe define o comportamento de seus objetos através de métodos e os estados possíveis destes objetos através de atributos. Em outros termos, uma classe descreve os serviços providos por seus objetos e quais informações eles podem armazenas.
+Como um molde.
+Exemplos: bola, carro, venda, viagem, comprador, computador
+
+Dicas
+-substantivos (concretos ou abstratos);
+-nomes significativos;
+-contexto deve ser considerado.
+
+Códigos
+- Java
+class Carro {
+	}
+- C# (c sharp)
+class Carro {
+	}
+
+- Python
+class Carro:
+	pass
+
+==========
+- Atributo: é o elemento de uma classe responsável por definir sua estrutura de dados. O conjunto destes será responsável por representar suas características e fará parte dos objetos criados a partor da classe.
+O conceito do mundo real que queremos representar num objeto (classe).
+Atributo: o que é próprio e peculiar a alguén ou a alguma coisa.
+Variável: sujeito a variações ou mudanças, que pode variar, inconstante, instável.
+Dicas
+-substantivos e adjetivos;
+-nomes significativos;
+-contexto deve ser considerado;
+-abstração;
+-tipos adequados.
+
+Códigos
+- Java
+class Carro {
+	int portas;
+	}
+- C# (c sharp)
+class Carro {
+	int portas;
+	}
+
+- Python
+class Carro:
+	portas = 0
+
+==========
+- Método: é uma porção de código (sub-rotina) que é disponibilizada pela classe. Este é executado quando é feita uma requisição a ele. Um método serve para identificar quais serviços, ações, que a classe oferece. Eles são responsáveis por definir e realizar um determinado comportamento.
+
+Criação
+Java e C#
+-Visibilidade
+-Retorno
+-Nome
+-Parâmetros
+
+Python
+-def
+-Nome
+-Parâmetros
+
+Dicas
+-verbos
+-nomes significativos
+-contexto deve ser considerado
+
+Códigos
+- Java e C#
+class Carro {
+	void frear (){
+		}
+	}
+
+- Python
+class Carro:
+	def frear()
+
+Dois métodos especiais
+Construtor: constroi objetos a partir das classes, provem valores iniciais aos atributos
+Códigos
+- Java e C#
+class Carro {
+	Carro(){
+		}
+	}
+
+- Python
+class Carro:
+	def __init__(self)
+
+Destrutor: auxilia a destruição do objeto (coletor de lixo - verifica o destrutor). Boa prática para liberar recursos (ex. portas seriais)
+Códigos
+- Java 
+class Carro {
+	void finalize(){
+		}
+	}
+- C# 
+class Carro {
+	~Carro(){
+		}
+	}
+
+- Python
+class Carro:
+	def __del__(self)
+
+Sobrecarga: mudar a assinatura de acordo com a necessidade (assinatura: nome+parâmetros).
+Java
+m1()
+m1(int i)
+m1(float f)
+m1(String s, long l)
+m1(long l, string s)
+
+C#
+M1()
+M1(int i)
+M1(float f)
+M1(String s, long l)
+M1(long l, string s)
+
+Python: não é possível realizar esta operação
+
+Por que usar sobrecarga? Representar de forma mais fidedigna a ação real (manter a abstração alvo e facilitar o entendimento do software).
+
+Objeto
+Mensagem
